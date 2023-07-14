@@ -1,0 +1,229 @@
+<html>
+<head>
+<body background="er.jpg">
+
+
+ <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            padding: 10px;
+            background-color: White;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <a href="Home.html" class="home-button">Home</a>
+
+
+<style>
+        .menu-icon {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .menu-icon span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+            top: 100%;
+            left: 10;
+            transform: translateY(-50%);
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-icon span:before,
+        .menu-icon span:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-icon span:before {
+            top: -8px;
+        }
+
+        .menu-icon span:after {
+            top: 8px;
+        }
+
+        /* Transition styles for menu icon animation */
+        .menu-icon.active span {
+            background-color: transparent;
+        }
+
+        .menu-icon.active span:before {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .menu-icon.active span:after {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    </style>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menuIcon = document.querySelector('.menu-icon');
+            menuIcon.classList.toggle('active');
+        }
+    </script>
+
+
+
+<head>
+    <style>
+        body {
+            font-family: Courier New';
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .switch {
+            margin-top: 20px;
+            font-size: 14px;
+            color: brown;
+        }
+    </style>
+</head>   
+<body>
+<div id="booking" class="section">
+<div class="section-center">
+<div class="container">
+<div class="row">
+<div class="col-md-7 col-md-push-5">
+<div class="booking-cta">
+<h1><i>Book A Tour, Take A Hike</i></h1>
+</div>
+<div class="form-group">
+                <label for="name">Name:</label>
+                <input type="name" required>
+            </div>
+<div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" required>
+            </div>
+<div class="form-group">
+                <label for="Contact Number">Contact Number:</label>
+                <input type="name" required>
+            </div>
+<div class="col-sm-6">
+<div class="form-group">
+<span class="form-label">Select Date of Hike</span>
+<input class="form-control" type="date" required>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<div class="form-group">
+<span class="form-label">Type of Hike</span>
+<select class="form-control">
+<option>Full Day Hike</option>
+<option>Half Day Hike</option>
+<option>Sunset Hike</option>
+<option>Overnight Hike</option>
+</select>
+<span class="select-arrow"></span>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<span class="form-label">Number of Hikers</span>
+<select class="form-control">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>more than 10</option>
+</select>
+<span class="select-arrow"></span>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-group">
+<span class="form-label">Tour Guide</span>
+<select class="form-control">
+<option>With</option>
+<option>Without</option>
+</select>
+<span class="select-arrow"></span>
+</div>
+</div>
+</div>
+<div class="form-btn">
+<button class="submit-btn">Book Now</button>
+</div>
+</form>
+</html>
